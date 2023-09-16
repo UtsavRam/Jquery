@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .box
+        {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /* margin-left: ; */
+        }
+    </style>
+</head>
+<body>
+    <p>Ram Utsav</p>
+    <div class="box"></div>
+    <script>
+    //    $('p').mouseenter(function(){
+    //     console.log('mouse enter',this)
+    //    })
+          
+
+        //  $('p').hover(function(){
+        //     console.log('hover is work',this)
+        //  })
+            
+            $('.box').hover(function(){
+            $('.box') .css("margin-left" , ("500px"))
+            })
+
+            $('.box').mouseenter(function(){
+            $('.box') .css("margin-left" , ("500px"))
+            })
+    </script>
+</body>
+</html>
