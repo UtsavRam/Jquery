@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In-Out </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1>Hello My Name Is Utsav Ram I'm Forntend Developer</h1>
+    <button id="fadein">fadein</button>
+    <button id="fadeOut">fadeOut</button>
+    <button id="fadeToggle">fadeToggle</button>
+</body>
+<script>
+     $('#fadein').click(function () {
+       $('h1').fadeIn(2000);
+     })
+
+     $('#fadeOut').click(function () {
+        $('h1').fadeOut(2000);
+     })
+     $('#fadeToggle').click(function () {
+        $('h1').fadeToggle(1000);
+     })
+</script>
+</html>
