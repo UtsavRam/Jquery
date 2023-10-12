@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+  
+        #box
+        {
+            height: 1px;
+            width: 40px;
+            background-color: black;
+        }
+        #box1
+        {
+            height: 1px;
+            width: 40px;
+            background-color: black;
+        }
+        #box2
+        {
+            height: 1px;
+            width: 40px;
+            background-color: black;
+        }
+        #box3
+        {
+            height: 1px;
+            width: 40px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <p class="p">Home</p>
+    <div id="box"></div>
+    <p class="p1">Home</p>
+    <div id="box1"></div>
+    <p class="p2">Home</p>
+    <div id="box2"></div>
+    <p class="p3">Home</p>
+    <div id="box3"></div>
+</body>
+<script>
+
+$('#box,#box1,#box2,#box3').css({display: 'none'});
+    $(function () {
+        $(".p").click(function () {
+            $('#box').css({display: 'block'});
+            $('#box1,#box2,#box3').css({display: 'none'});
+        })
+    })
+    $(function () {
+        $(".p1").click(function () {
+            $('#box1').css({display: 'block'});
+            $('#box,#box2,#box3').css({display: 'none'});
+        })
+    })
+    $(function() {
+        $(".p2").click(function(){
+            $('#box2').css({display: 'block'});
+            $('#box,#box1,#box3').css({display: 'none'});
+        })
+    })
+    $(function() {
+        $(".p3").click(function(){
+            $("#box3").css({display: 'block'});
+            $('#box,#box1,#box2').css({display: 'none'})
+        })
+    })
+</script>
+</html>
