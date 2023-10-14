@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1> What is jQuery? </h1>
+    <ul>
+        <li>jQuery is a lightweight, "write less, do more", JavaScript library.</li>
+
+        <li>The purpose of jQuery is to make it much easier to use JavaScript on your website.</li>
+
+        <li>jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</li>
+        
+        <li>jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</li>
+    </ul> <hr>
+
+    <h1></h1>
+    <ul>
+        <li></li>
+    </ul>
+    <h1>How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?</h1>
+
+    <ul>
+        <li>addClass() - Adds one or more classes to the selected elements.</li>
+        <li>removeClass() - Removes one or more classes from the selected elements.</li>
+        <li>toggleClass() - Toggles between adding/removing classes from the selected elements.</li>
+        <li>css() - Sets or returns the style attribute.</li>
+        </ul>
+
+        <div id="flip">Click To Slide The Panel Down Or Up</div>
+    <div id="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, blanditiis at voluptatem aspernatur quaerat alias, eius quia similique debitis sunt quam soluta tempore. Fuga omnis quam, dicta labore dolores distinctio et quia nostrum </div>
+
+    <div id="p1">
+        <button id="c1">I am child button</button>
+    </div>
+
+    <script>
+        var parent = document.querySelector('#p1');
+        parent.addEventListener('click', function () {
+            console.log("Parent is invoked");
+        });
+
+        var child = document.querySelector('#c1');
+        child.addEventListener('click', function () {
+            console.log("Child is invoked");
+        });  
+    </script>
+</body>
+</html>
